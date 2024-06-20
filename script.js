@@ -1,0 +1,1 @@
+const dogYears = 69
