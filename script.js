@@ -17,6 +17,7 @@ function dogCalculator() {
         laterYears = laterYears * 4
         let dogYears = earlyYears + laterYears
         out.textContent = `Hello ${n}, you are ${dogYears} years old in dog years!`
+        err.textContent = ""
     }
 }
 
