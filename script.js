@@ -10,7 +10,7 @@ function dogCalculator() {
     let a = myAge.value;
 
     if (n == "" || a < 1) {
-        err.textContent = "Please enter a name and/or age starting from 1"
+        err.textContent = "Please enter your name and/or age, starting from 1"
     } else {
         let earlyYears = 2 * 10.5
         let laterYears = myAge.value - 2
