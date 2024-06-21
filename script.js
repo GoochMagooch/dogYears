@@ -6,17 +6,17 @@ const err = document.querySelector('.error')
 
 function dogCalculator() {
 
-    const name = myName.value;
-    const age = myAge.value;
+    const nameValue = myName.value.trim();
+    const ageValue = myAge.value;
 
-    if (name == "" || age < 1) {
+    if (nameValue == "" || ageValue < 1) {
         err.textContent = "Please enter your name and/or age, starting from 1"
     } else {
         const earlyYears = 2 * 10.5
-        const laterYears = myAge.value - 2
+        let laterYears = ageValue - 2
         laterYears = laterYears * 4
         const dogYears = earlyYears + laterYears
-        out.textContent = `Hello ${name}, you are ${dogYears} years old in dog years!`
+        out.textContent = `Hello ${nameValue}, you are ${dogYears} years old in dog years!`
         err.textContent = ""
     }
 }
